@@ -10,6 +10,9 @@ def main():
     txt = '{} {} has a total of {}'
     print(txt.format(first, last, lifter_a.getTotal()))
     print(lifter_a.getBMI())
+    print(dir(Lifter))
+    txt = "This athlete's name is {nm}"
+    print(txt.format(nm=first))
 
 main()
 
