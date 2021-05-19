@@ -23,10 +23,10 @@ class Lifter:
         return bmi
 
 class OlympicLifter(Lifter):
-    def __init__(self,fn,ln,wt,ht,sntch,cj):
+    def __init__(self,fn,ln,wt,ht,sntch,cnj):
         super().__init__(self,fn,ln,wt,ht,None,None)
         self.snatch = sntch
-        self.cj = cj
+        self.cj = cnj
 
 
 
