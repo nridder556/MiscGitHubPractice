@@ -1,5 +1,5 @@
 
-
+import math
 class Lifter:
 
     def __init__(self, firstname, lastname, weight_lb, height_in, bench_lb, squat_lb, deadlift_lb):
@@ -18,5 +18,8 @@ class Lifter:
         return total
 
 
+    def getBMI(self):
+        bmi = self.weight/math.pow(self.height, 2)*703
+        return bmi
 
 

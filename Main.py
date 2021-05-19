@@ -1,5 +1,6 @@
 
 from Lifter import Lifter
+import math
 
 
 def main():
@@ -8,7 +9,7 @@ def main():
     lifter_a = Lifter(first,last,weight,height,bench,squat,deadlift)
     txt = '{} {} has a total of {}'
     print(txt.format(first, last, lifter_a.getTotal()))
-
+    print(lifter_a.getBMI())
 
 main()
 
