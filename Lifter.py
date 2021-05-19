@@ -22,4 +22,11 @@ class Lifter:
         bmi = self.weight/math.pow(self.height, 2)*703
         return bmi
 
+class OlympicLifter(Lifter):
+    def __init__(self,fn,ln,wt,ht,sntch,cj):
+        super().__init__(self,fn,ln,wt,ht,None,None)
+        self.snatch = sntch
+        self.cj = cj
+
+
 
